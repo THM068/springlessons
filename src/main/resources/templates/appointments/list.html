@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Appointment List</title>
+</head>
+<body>
+    <h4>Appointment List</h4>
+    <ul th:each="item: ${list}">
+        <li th:text="${item}">Item</li>
+    </ul>
+</body>
+</html>
